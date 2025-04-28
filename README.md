@@ -97,4 +97,26 @@ git status
 ```bash
 git add README.md 
 ```
+
+- 모든 파일 및 폴더 저장(추천)
+
+```bash
+git add .
+```
+
+#### 4-4. 수정 내역 메모
+
+- 한줄 작업 메모
+
+```bash
+git commit -m "작업 관련 설명글 작성"
+```
+
+- 여러줄 작업 메모(제목, 상세내용)
+
+```bash
+git commit 
+```
+
+
 # GitHub
