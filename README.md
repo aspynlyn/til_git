@@ -95,7 +95,7 @@ git status
 - 원하는 파일만 저장
 
 ```bash
-git add README.md 
+git add README.md
 ```
 
 - 모든 파일 및 폴더 저장(추천)
@@ -115,7 +115,7 @@ git commit -m "작업 관련 설명글 작성"
 - 여러줄 작업 메모(제목, 상세내용)
 
 ```bash
-git commit 
+git commit
 ```
 
 #### 4-5. commit 내용 컨벤션
@@ -190,11 +190,57 @@ git show 커밋아이디
 
 ##### 4-6.1 각 항목 관련 사항 이해
 
-- commit : 고유한 커밋 번호(아이디) 
+- commit : 고유한 커밋 번호(아이디)
 
 - Author : 작성자
 
 - Date : 날짜
 
-- message : 
+- message : 상세내용
+
+#### 4-7 브랜치 작업해보기
+
+- `나뭇가지`라는 의미로 원 줄기로부터 파생되는 것을 말함
+
+- 원 `소스`로부터 파생된 새롭게 `분기한 소스`관리를 말함
+
+- 브랜치 생성시에는 add와 commit이 완료되어야함
+
+##### 4-7.1 브랜치 생성
+
+```bash
+git add .
+git commit -m "[docs]:브랜치 실습 test 생성하기"
+git branch test
+```
+
+##### 4-7.2 브랜치 목록 확인
+
+```bash
+git branch -v
+```
+
+##### 4-7.3 브랜치 이동
+
+```bash
+git switch test
+```
+
+##### 4-7.4 브랜치 삭제
+
+```bash
+git branch -D test
+git branch -v
+```
+
+##### 4-7.5 브랜치 병합(가급적 사용 X)
+
+- 브랜치 하나로 병합
+
+- 주의 사항 : main 브랜치에서 test 브랜치를 합침
+
+```bash
+git merge 합치고자 하는 브랜치명
+```
+
 # GitHub
