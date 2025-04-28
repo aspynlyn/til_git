@@ -299,3 +299,53 @@ git remote -v
 git add .
 git commit -m "[docs]:최초등록"
 ```
+- 소스 업로드를 `push` 한다고 말함
+
+```bash
+git push -u origin main
+```
+```bash
+git push origin main
+```
+
+- `-u`옵션을 붙였다면 이후로는 `git push`만 적으면 됨
+
+#### 4-3. 원격 저장소 관리
+
+- 목록 보기
+
+```bash
+git remote -v
+```
+
+- 삭제 하기
+
+```bash
+git remote remove 원격이름
+```
+
+- 추가하기
+
+```bash
+git remote add 원격이름 https주소
+```
+
+- 이름 바꾸기
+
+```bash
+git remote rename 기존이름 바꿀이름
+```
+
+#### 4-5. 추천 작업 순서
+
+```bash
+git add .
+git commit -m "[docs]:git 학습"
+git push origin main
+```
+
+#### 4-6. GitHub의 소스를 다운받아서 작업하는 법
+
+- GitHub 주소를 주의해야함
+    - 코드 소스 기준 `http`로 진행
+    - 코드 소스 기준이 `ssh`면 인증을 다시 처리하는 과정 필요
