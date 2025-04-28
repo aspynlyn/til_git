@@ -243,4 +243,10 @@ git branch -v
 git merge 합치고자 하는 브랜치명
 ```
 
+#### 4-8 git 브랜치 충돌 해결
+
+- git 브랜치를 merge하면 많이 발생
+
+- `login`브랜치에서 나는 로그인 기능을 구현함
+
 # GitHub
