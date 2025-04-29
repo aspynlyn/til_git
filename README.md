@@ -299,11 +299,13 @@ git remote -v
 git add .
 git commit -m "[docs]:최초등록"
 ```
+
 - 소스 업로드를 `push` 한다고 말함
 
 ```bash
 git push -u origin main
 ```
+
 ```bash
 git push origin main
 ```
@@ -344,8 +346,39 @@ git commit -m "[docs]:git 학습"
 git push origin main
 ```
 
-#### 4-6. GitHub의 소스를 다운받아서 작업하는 법
+## 5. GitHub의 소스를 복사(Clone)해서 작업하는 법
 
 - GitHub 주소를 주의해야함
-    - 코드 소스 기준 `http`로 진행
-    - 코드 소스 기준이 `ssh`면 인증을 다시 처리하는 과정 필요
+  - 코드 소스 기준 `http`로 진행
+  - 코드 소스 기준이 `ssh`면 인증을 다시 처리하는 과정 필요
+
+#### 5-1. 실습
+
+- 서울로 출장을 감(PC도 없이) 서울 사무소에서 PC를 지급받은 상황
+
+  - PC에 환경 설정 진행(VSCode, Git)
+
+  - `D:/student/test 폴더` 생성
+
+  - GitHub 사이트에 프로젝트를 `clone`함
+
+  - GitBub 사이트에 Repository를 `clone`함
+
+#### 5-2. clone
+
+```bash
+git clone 깃허브주소(https) .
+```
+
+#### 5-3. clone 이후의 작업
+
+```bash
+git status
+git branch -v
+git branch 새브랜치명
+git switch 새브랜치명
+작업진행
+git add .
+git commit -m "작업내용"
+git push origin 새브랜치명
+```
