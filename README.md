@@ -375,12 +375,52 @@ git clone 깃허브주소(https) .
 ```bash
 git status
 git branch -v
+```
+
+```bash
 git branch 새브랜치명
 git switch 새브랜치명
-작업진행
+```
+
+```bash
 git add .
 git commit -m "작업내용"
+```
+
+```bash
 git push origin 새브랜치명
 ```
 
 ㅇㅇㅇㅇㅇㅇㅇ00000000000
+#### 5-4. git push 이후 작업
+
+- jeju 폴더는 clone을 하여 진행
+
+- `til_git 폴더는 clone을 할 필요가 있나?`
+
+  - til_git은 이미 git 세팅이 되어있음 clone 필요없음
+
+#### 5-5. 기존 프로젝트에서 GitHub 브랜치 적용
+
+- 기존 프로젝트에서는 clone 하지 않음
+
+- 기존 프로젝트에서는 `fetch`사용
+
+- 1. fetch로 github의 모든 브랜치 가져옴
+
+```bash
+git fetch --all
+```
+
+- 2. 브랜치 목록 확인(로컬과 깃허브 브랜치 모두)
+
+```bash
+git branch -a
+```
+
+- 3. `새롭게 작업한 깃허브 브랜치`를 `로컬 브랜치 생성 > 작업` 동시 진행
+
+```bash
+git switch --track -c 생성브랜치명 원격브랜치명
+예 : git switch --track -c jeju remotes/origin/jeju
+```
