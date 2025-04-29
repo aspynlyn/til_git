@@ -421,5 +421,5 @@ git branch -a
 
 ```bash
 git switch --track -c 생성브랜치명 원격브랜치명
-예 : git switch --track -c daegu2 remotes/origin/jeju
+예 : git switch --track -c jeju remotes/origin/jeju
 ```
