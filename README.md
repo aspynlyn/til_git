@@ -382,3 +382,4 @@ git add .
 git commit -m "작업내용"
 git push origin 새브랜치명
 ```
+ㅇㅇㅇㅇㅇㅇㅇ
